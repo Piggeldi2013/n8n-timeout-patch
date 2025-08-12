@@ -25,6 +25,8 @@ Make sure to use that image build further on!
 
 Use the patch given in this repo and mount it into a running container - that also might be done just read only.
 
+You may also push that file into your docker image - I didn't as I would like to be able to configure / change things later without having to rebuild the image again.
+
 # Change / Add your docker environment variables
 
 Add the following values to your docker environment variables, either in a docker compose or your .env file.
@@ -43,8 +45,7 @@ Make sure to replace the /path/to/your/mount with the path where you mounted the
     - FETCH_KEEPALIVE_TIMEOUT=65000
 ```
 
-You may also push that file into your docker image - I didn't as I would like to be able to configure / change things later without beeing forced to build the image again.
 
 ---
 
-Thats it - now your long running LLM-Calls should go thorugh.
+That's it - now your long running LLM-Calls should go through when the docker container is restarted.
