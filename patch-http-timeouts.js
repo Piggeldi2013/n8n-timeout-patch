@@ -62,7 +62,7 @@
 //      `[patch] undici dispatcher set: headersTimeout=${headersTimeout}ms, ` +
 //      `bodyTimeout=${bodyTimeout}ms, connectTimeout=${connectTimeout}ms, ` +
 //      `keepAliveTimeout=${keepAliveTimeout}ms`
-    );
+//    );
   } catch (e) {
     console.warn('[patch] undici not available or failed to set dispatcher', e?.message || e);
   }
